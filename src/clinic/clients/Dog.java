@@ -1,10 +1,8 @@
 import java.time.LocalDate;
 
-public class Dog extends Animal implements Goable {
+public class Dog extends Animal implements Goable, Swimable {
     public Dog(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
-        super(nickName, owner, birthDate, illness); // Сходи в род.класс и вызови 4 параметра
-        // super используется тогода когда в классе наследнике мы хотим использовать
-        // конструктор родителя
+        super(nickName, owner, birthDate, illness);
     }
 
     public Dog() {// eесли создаем объект в main то в классе создаем пустой конструктор
@@ -17,8 +15,23 @@ public class Dog extends Animal implements Goable {
     }
 
     @Override
+    public double getRunSpeed() {
+        return Goable.super.getRunSpeed();
+    }
+
+    @Override
+    public void toSwimm() {
+        System.out.println("Животное поплыло");
+    }
+
+    @Override
+    public double getSwimmSpeed() {
+        return Swimable.super.getSwimmSpeed();
+    }
+
+    @Override
     public void eat() {
         System.out.println("Собака ест еду из миски");
-        ;
+
     }
 }
