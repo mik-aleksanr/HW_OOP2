@@ -1,3 +1,5 @@
+package clinic.clients;
+
 public class Illness {
     String title;
 

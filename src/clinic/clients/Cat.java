@@ -1,3 +1,7 @@
+package clinic.clients;
+
+import clinic.clients.Animal;
+
 import java.time.LocalDate;
 
 public class Cat extends Animal implements Goable, Swimable {

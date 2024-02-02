@@ -1,3 +1,5 @@
+package clinic.clients;
+
 @FunctionalInterface
 public interface Swimable {
     void toSwimm();

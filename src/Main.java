@@ -1,5 +1,9 @@
 
 
+import clinic.clients.*;
+import clinic.personal.Doctor;
+import clinic.personal.Nurse;
+
 import java.util.List;
 import java.util.ArrayList;
 

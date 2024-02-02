@@ -1,3 +1,7 @@
+package clinic.personal;
+
+import clinic.personal.Staff;
+
 import java.time.LocalDate;
 
 public class Doctor extends Staff {

@@ -1,3 +1,5 @@
+package clinic.personal;
+
 import java.time.LocalDate;
 
 public abstract class Staff {
