@@ -1,7 +1,5 @@
 package clinic.clients;
 
-import clinic.clients.Animal;
-
 import java.time.LocalDate;
 
 public class Dog extends Animal implements Goable, Swimable {
@@ -33,9 +31,5 @@ public class Dog extends Animal implements Goable, Swimable {
         return Swimable.super.getSwimmSpeed();
     }
 
-    @Override
-    public void eat() {
-        System.out.println("Собака ест еду из миски");
 
-    }
 }

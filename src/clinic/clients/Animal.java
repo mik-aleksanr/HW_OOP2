@@ -2,7 +2,7 @@ package clinic.clients;
 
 import java.time.LocalDate;
 
-public abstract class Animal {
+public class Animal {
     protected String nickName;
     protected Owner owner;
     protected LocalDate birthDate;
@@ -39,11 +39,15 @@ public abstract class Animal {
         return getClass().getSimpleName();
     }
 
+    public void eat() {
+        System.out.println("Животное ест");
+    }
+
     @Override
     public String toString() {
         return String.format("nickName = %s, bd = %s, owner = %s, illness = %s",
                 nickName, birthDate, owner, illness);
     }
 
-    public abstract void eat();
+
 }

@@ -1,7 +1,5 @@
 package clinic.clients;
 
-import clinic.clients.Animal;
-
 import java.time.LocalDate;
 
 public class Cat extends Animal implements Goable, Swimable {
@@ -53,8 +51,4 @@ public class Cat extends Animal implements Goable, Swimable {
         return super.toString() + "Discount(" + discount + ")";
     }
 
-    @Override
-    public void eat() {
-        System.out.println("Кот поймал мышь и ест");
-    }
 }

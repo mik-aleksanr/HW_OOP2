@@ -1,7 +1,5 @@
 package clinic.clients;
 
-import clinic.clients.Animal;
-
 import java.time.LocalDate;
 
 public class Fish extends Animal implements Swimable {
@@ -23,9 +21,5 @@ public class Fish extends Animal implements Swimable {
         return Swimable.super.getSwimmSpeed();
     }
 
-    @Override
-    public void eat() {
-        System.out.println("Рыбка ест корм с поверхности воды");
 
-    }
 }

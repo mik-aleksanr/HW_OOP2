@@ -2,7 +2,7 @@ package clinic.personal;
 
 import java.time.LocalDate;
 
-public abstract class Staff {
+public class Staff {
     protected String fullName;
     protected String gender;
     protected LocalDate dateOfBirth;

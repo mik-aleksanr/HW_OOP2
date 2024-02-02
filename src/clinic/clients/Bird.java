@@ -1,7 +1,5 @@
 package clinic.clients;
 
-import clinic.clients.Animal;
-
 import java.time.LocalDate;
 
 public class Bird extends Animal implements Goable, Swimable, Flyable {
@@ -14,6 +12,7 @@ public class Bird extends Animal implements Goable, Swimable, Flyable {
     public Bird() {// eесли создаем объект в main то в классе создаем пустой конструктор
         super();
     }
+
 
     @Override
     public void toGo() {
@@ -45,9 +44,4 @@ public class Bird extends Animal implements Goable, Swimable, Flyable {
         return Flyable.super.getFlySpeed();
     }
 
-    @Override
-    public void eat() {
-        System.out.println("Утка жует ряску");
-
-    }
 }
